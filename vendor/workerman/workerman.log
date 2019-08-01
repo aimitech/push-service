@@ -1,0 +1,50 @@
+2019-08-01 14:21:23 pid:1 Error: Class 'Timer' not found in D:\WWW\workerman\start.php:12
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Worker))
+#1 D:\WWW\workerman\vendor\workerman\workerman\Worker.php(2342): call_user_func(Object(Closure), Object(Workerman\Worker))
+#2 D:\WWW\workerman\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#3 D:\WWW\workerman\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#4 D:\WWW\workerman\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#5 D:\WWW\workerman\start.php(109): Workerman\Worker::runAll()
+#6 {main}
+2019-08-01 14:21:24 pid:1 Worker process terminated
+2019-08-01 14:22:31 pid:1 Error: Class 'Console' not found in D:\WWW\workerman\start.php:48
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection))
+#1 D:\WWW\workerman\vendor\workerman\workerman\Worker.php(2424): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection))
+#2 [internal function]: Workerman\Worker->acceptConnection(Resource id #18)
+#3 D:\WWW\workerman\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#4 D:\WWW\workerman\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#5 D:\WWW\workerman\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#6 D:\WWW\workerman\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#7 D:\WWW\workerman\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#8 D:\WWW\workerman\start.php(110): Workerman\Worker::runAll()
+#9 {main}
+2019-08-01 14:22:31 pid:1 Worker process terminated
+2019-08-01 14:31:44 pid:1 Error: Using $this when not in object context in D:\WWW\workerman\start.php:61
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), '{"json":"{\\"tok...')
+#1 D:\WWW\workerman\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"json":"{\\"tok...')
+#2 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #26)
+#3 D:\WWW\workerman\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#4 D:\WWW\workerman\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#5 D:\WWW\workerman\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#6 D:\WWW\workerman\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#7 D:\WWW\workerman\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#8 D:\WWW\workerman\start.php(110): Workerman\Worker::runAll()
+#9 {main}
+2019-08-01 14:31:44 pid:1 Worker process terminated
+2019-08-01 14:46:44 pid:1 Error: Call to undefined method Websocket::check_token() in D:\WWW\workerman\start.php:90
+Stack trace:
+#0 [internal function]: Websocket->{closure}(Object(Workerman\Connection\TcpConnection), '{"json":"{\\"tok...')
+#1 D:\WWW\workerman\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '{"json":"{\\"tok...')
+#2 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #26)
+#3 D:\WWW\workerman\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#4 D:\WWW\workerman\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#5 D:\WWW\workerman\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#6 D:\WWW\workerman\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#7 D:\WWW\workerman\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#8 D:\WWW\workerman\start.php(121): Workerman\Worker::runAll()
+#9 D:\WWW\workerman\start.php(186): Websocket->start()
+#10 {main}
+2019-08-01 14:46:44 pid:1 Worker process terminated
